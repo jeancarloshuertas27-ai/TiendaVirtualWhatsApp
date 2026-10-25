@@ -9,22 +9,30 @@ import { ProductGrid } from './components/ProductGrid';
 import { QuickOrderBar } from './components/QuickOrderBar';
 import { CartDrawer } from './components/CartDrawer';
 import { BottomNav } from './components/BottomNav';
+import { CartPage } from './components/cart/CartPage';
 import { buildWhatsAppUrl } from './utils/whatsapp';
 
 function CatalogApp() {
   const [activeCategory, setActiveCategory] = useState('Todos');
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const { items, totalCount, totalAmount } = useCart();
+  const {
+    items,
+    totalCount,
+    totalAmount,
+    deliveryNotes,
+    currentView,
+    setCurrentView,
+  } = useCart();
 
   const filteredProducts = useMemo(() => {
     if (activeCategory === 'Todos') {
       return productsData;
     }
-    return productsData.filter(p => p.category === activeCategory);
+    return productsData.filter((p) => p.category === activeCategory);
   }, [activeCategory]);
 
-  const handleOpenDrawer = () => {
-    setIsDrawerOpen(true);
+  const handleOpenCart = () => {
+    setCurrentView('carrito');
   };
 
   const handleCloseDrawer = () => {
@@ -33,41 +41,52 @@ function CatalogApp() {
 
   const handleCheckoutWhatsApp = () => {
     if (items.length === 0) return;
-    const url = buildWhatsAppUrl(items, totalAmount);
+    const url = buildWhatsAppUrl(items, totalAmount, deliveryNotes);
     window.open(url, '_blank', 'noopener,noreferrer');
     setIsDrawerOpen(false);
   };
 
   return (
-    <div className="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col">
-      <Header onCartClick={handleOpenDrawer} />
+    <div className="bg-surface-container-low min-h-screen flex justify-center antialiased font-body-md text-on-surface">
+      <div className="w-full max-w-md min-h-screen bg-surface flex flex-col relative shadow-2xl border-x border-surface-container-high/40">
+        <Header onCartClick={handleOpenCart} />
 
-      <main className="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen">
-        <div className="flex flex-col w-full pb-20">
-          <CategoryPills
-            activeCategory={activeCategory}
-            onSelectCategory={setActiveCategory}
-          />
-          <AnnouncementBanner />
-          <ProductGrid products={filteredProducts} />
-        </div>
+        <main className="flex flex-col relative w-full pt-16 pb-24 bg-surface flex-1">
+          {currentView === 'carrito' ? (
+            <CartPage />
+          ) : (
+            <>
+              <div className="flex flex-col w-full pb-20">
+                <CategoryPills
+                  activeCategory={activeCategory}
+                  onSelectCategory={setActiveCategory}
+                />
+                <AnnouncementBanner />
+                <ProductGrid products={filteredProducts} />
+              </div>
 
-        <QuickOrderBar
-          totalItems={totalCount}
-          totalAmount={totalAmount}
-          onOpenDrawer={handleOpenDrawer}
+              <QuickOrderBar
+                onOpenDrawer={handleOpenCart}
+                totalAmount={totalAmount}
+                totalItems={totalCount}
+              />
+
+              <CartDrawer
+                isOpen={isDrawerOpen}
+                items={items}
+                onCheckoutWhatsApp={handleCheckoutWhatsApp}
+                onClose={handleCloseDrawer}
+                totalAmount={totalAmount}
+              />
+            </>
+          )}
+        </main>
+
+        <BottomNav
+          onCatalogClick={() => setCurrentView('catalogo')}
+          onCartClick={handleOpenCart}
         />
-
-        <CartDrawer
-          isOpen={isDrawerOpen}
-          onClose={handleCloseDrawer}
-          items={items}
-          totalAmount={totalAmount}
-          onCheckoutWhatsApp={handleCheckoutWhatsApp}
-        />
-      </main>
-
-      <BottomNav onCartClick={handleOpenDrawer} />
+      </div>
     </div>
   );
 }
@@ -79,4 +98,3 @@ export default function App() {
     </CartProvider>
   );
 }
-

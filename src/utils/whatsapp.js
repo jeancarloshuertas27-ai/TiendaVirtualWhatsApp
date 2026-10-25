@@ -1,15 +1,16 @@
-import { WHATSAPP_PHONE_NUMBER, STORE_NAME } from '../config/constants';
+import { WHATSAPP_PHONE_NUMBER } from '../config/constants';
 import { formatPrice } from './formatters';
 
 /**
- * Construye el mensaje estructurado para WhatsApp según el contrato formal
+ * Construye el mensaje estructurado para WhatsApp según el contrato formal de la Feature 002
  * @param {Array<{ name: string, quantity: number, subtotal: number }>} items
  * @param {number} totalAmount
+ * @param {string} [deliveryNotes='']
  * @returns {string}
  */
-export function buildWhatsAppMessage(items, totalAmount) {
+export function buildWhatsAppMessage(items, totalAmount, deliveryNotes = '') {
   const lines = [
-    `*¡Hola ${STORE_NAME}! Quiero confirmar mi pedido:*`,
+    '*¡Hola Nova Store! Quiero confirmar mi pedido:*',
     ''
   ];
 
@@ -18,23 +19,29 @@ export function buildWhatsAppMessage(items, totalAmount) {
   });
 
   lines.push('');
-  lines.push(`*Total estimado:* ${formatPrice(totalAmount)}`);
-  lines.push('🚚 *Envío:* Gratis prioritario 24h');
+  lines.push(`*Total a pagar:* ${formatPrice(totalAmount)}`);
+  lines.push('🚚 *Envío:* Gratis');
+
+  const trimmedNotes = typeof deliveryNotes === 'string' ? deliveryNotes.trim() : '';
+  if (trimmedNotes.length > 0) {
+    lines.push(`📝 *Notas:* ${trimmedNotes}`);
+  }
+
   lines.push('');
-  lines.push('Por favor confírmenme disponibilidad y datos para la entrega. ¡Gracias!');
+  lines.push('Por favor confírmenme disponibilidad y datos de pago. ¡Gracias!');
 
   return lines.join('\n');
 }
 
 /**
- * Construye la URL oficial y segura hacia wa.me
+ * Construye la URL oficial y segura hacia wa.me codificando el mensaje con encodeURIComponent
  * @param {Array} items
  * @param {number} totalAmount
+ * @param {string} [deliveryNotes='']
  * @param {string} [phoneNumber=WHATSAPP_PHONE_NUMBER]
  * @returns {string}
  */
-export function buildWhatsAppUrl(items, totalAmount, phoneNumber = WHATSAPP_PHONE_NUMBER) {
-  const message = buildWhatsAppMessage(items, totalAmount);
+export function buildWhatsAppUrl(items, totalAmount, deliveryNotes = '', phoneNumber = WHATSAPP_PHONE_NUMBER) {
+  const message = buildWhatsAppMessage(items, totalAmount, deliveryNotes);
   return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 }
-
