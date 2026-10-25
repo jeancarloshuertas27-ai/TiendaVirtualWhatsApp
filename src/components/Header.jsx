@@ -2,10 +2,19 @@ import React from 'react';
 import { useCart } from '../hooks/useCart';
 
 export function Header({ onCartClick }) {
-  const { totalCount } = useCart();
+  const { totalCount, currentView, setCurrentView } = useCart();
+
+  const handleCartClick = (e) => {
+    e.preventDefault();
+    if (onCartClick) {
+      onCartClick();
+    } else if (setCurrentView) {
+      setCurrentView('carrito');
+    }
+  };
 
   return (
-    <header className="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+    <header className="fixed top-0 left-0 right-0 max-w-md mx-auto w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
       <div className="h-16 px-margin flex items-center justify-between">
         <div className="flex items-center gap-space-sm">
           <img
@@ -17,8 +26,11 @@ export function Header({ onCartClick }) {
             <span className="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none uppercase">
               NOVA STORE
             </span>
-            <span className="font-label-sm text-label-sm text-on-surface-variant">
-              Catálogo
+            <span
+              className="font-label-sm text-label-sm text-on-surface-variant"
+              data-testid="header-subtitle"
+            >
+              {currentView === 'carrito' ? 'Carrito' : 'Catálogo'}
             </span>
           </div>
         </div>
@@ -27,10 +39,7 @@ export function Header({ onCartClick }) {
           <button
             aria-label="Carrito de compras"
             className="relative w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors cursor-pointer"
-            onClick={(e) => {
-              e.preventDefault();
-              if (onCartClick) onCartClick();
-            }}
+            onClick={handleCartClick}
             type="button"
           >
             <span className="material-symbols-outlined text-[24px]">shopping_bag</span>
@@ -52,4 +61,3 @@ export function Header({ onCartClick }) {
     </header>
   );
 }
-

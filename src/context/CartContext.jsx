@@ -9,7 +9,12 @@ function loadInitialCart() {
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (Array.isArray(parsed)) {
-      return parsed.filter(item => item && item.productId && item.quantity > 0);
+      return parsed
+        .filter(item => item && item.productId && item.quantity > 0)
+        .map(item => ({
+          ...item,
+          attribute: item.attribute || '',
+        }));
     }
     return [];
   } catch (error) {
@@ -23,6 +28,8 @@ function loadInitialCart() {
 
 export function CartProvider({ children }) {
   const [items, setItems] = useState(loadInitialCart);
+  const [deliveryNotes, setDeliveryNotes] = useState('');
+  const [currentView, setCurrentView] = useState('catalogo'); // 'catalogo' | 'carrito'
 
   useEffect(() => {
     try {
@@ -56,6 +63,7 @@ export function CartProvider({ children }) {
         name: product.name,
         price: product.price,
         imageUrl: product.imageUrl,
+        attribute: product.attribute || product.category || '',
         quantity: safeQty,
         subtotal: product.price * safeQty,
       };
@@ -96,6 +104,10 @@ export function CartProvider({ children }) {
     items,
     totalCount,
     totalAmount,
+    deliveryNotes,
+    setDeliveryNotes,
+    currentView,
+    setCurrentView,
     addToCart,
     updateQuantity,
     removeFromCart,
@@ -108,4 +120,3 @@ export function CartProvider({ children }) {
     </CartContext.Provider>
   );
 }
-

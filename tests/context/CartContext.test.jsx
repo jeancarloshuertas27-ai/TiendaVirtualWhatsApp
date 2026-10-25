@@ -115,5 +115,29 @@ describe('CartContext & LocalStorage Persistence', () => {
     expect(result.current.items).toEqual([]);
     expect(result.current.totalCount).toBe(0);
   });
-});
 
+  it('permite actualizar deliveryNotes y conserva el estado en memoria durante la sesión', () => {
+    const { result } = renderHook(() => useCart(), { wrapper });
+
+    expect(result.current.deliveryNotes).toBe('');
+    act(() => {
+      result.current.setDeliveryNotes('Timbre 4, dejar en recepción');
+    });
+    expect(result.current.deliveryNotes).toBe('Timbre 4, dejar en recepción');
+  });
+
+  it('permite alternar currentView entre catalogo y carrito', () => {
+    const { result } = renderHook(() => useCart(), { wrapper });
+
+    expect(result.current.currentView).toBe('catalogo');
+    act(() => {
+      result.current.setCurrentView('carrito');
+    });
+    expect(result.current.currentView).toBe('carrito');
+
+    act(() => {
+      result.current.setCurrentView('catalogo');
+    });
+    expect(result.current.currentView).toBe('catalogo');
+  });
+});
