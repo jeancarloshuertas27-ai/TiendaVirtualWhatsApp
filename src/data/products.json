@@ -1,0 +1,63 @@
+[
+  {
+    "id": 1,
+    "name": "Nova Sonic Max",
+    "category": "Audio",
+    "badge": "Audio Pro",
+    "description": "Cancelación activa",
+    "attribute": "Stock listo",
+    "price": 199.00,
+    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBqpnCrEGKYD1NGQKuEXM23N-4Vf7FQvSY90fBbsHvdYzQ4NL7nfjJopkDRVE1I26vAMU38sIkIwXBS-_MSKkuzg5S12sPcZuNYPi7_zXCJTSLlyRWXORl53z5vSjX28Wtv-xUMuNxCRX95rrb62AqgTA6QADtuFHb84hfEefxMf_i3xFqHYPPMbDDqWITMgt4JfMbWj0a9lqhSMZAM8OpcnJYh4dFW0yh2zMfVcK2T1K72aa_g20Ob"
+  },
+  {
+    "id": 2,
+    "name": "Apex Horizon GPS",
+    "category": "Wearables",
+    "badge": "Nuevo",
+    "description": "Titanio y Zafiro",
+    "attribute": "42mm",
+    "price": 149.50,
+    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBiHCbQQKMBVSGzhIStQFZcAzJN0jNc_bMQ8rGa2jFNcfT9XQOrR3sJh7x0WbdXxIIDqrx9RjlUj79b-9bUBcM_rf1pMMHXPYxiffvQTVwYmhEc_9iNTXKY_rkEeJEcbM3lweQou5WHvMTF_Qi4WSQtjDc_OVzeG6tFog8Ty9YpuVrYHYTwk802Dl2aIsXiziUH0q0D6qTJu6BRNWX2FH5FcI3k_g8Y7efPzJwB0CoEcLFmzLdni_PC"
+  },
+  {
+    "id": 3,
+    "name": "Mochila Nomad Core",
+    "category": "Accesorios",
+    "badge": "22 Litros",
+    "description": "Impermeable IPX5",
+    "attribute": "Popular",
+    "price": 89.50,
+    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuBkPhZvz3RZgeVIU0WEGrWbxKAfUfnQLqBThouVc3sTd4PZRspMthkCoGGvJI87Elv3sUakUU8UIx4bdr0NKvnagRmw61EBS432RsFG5rJTaWmM5ZsN3JDd0BR2rx4P2O_Yxf61xyEnAmdw_tTxjNhc-dJCdhgO0Zww7T9xPtJl-Jcn4MhS88vZglelp3fUiNKuCRB8tDlg3L0Fn5wXKZuet-xLW_Ze3gPJVpVWSEJGxzfsM0igsh5x"
+  },
+  {
+    "id": 4,
+    "name": "Aero Pure Leather",
+    "category": "Accesorios",
+    "badge": "Calzado",
+    "description": "Cuero ecológico",
+    "attribute": "Tallas 38-44",
+    "price": 129.00,
+    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuD2IWXQtglv0xu3XnJmodHFYYHxwcVtTP3K1b89r5WKTAEn8tJlyLUQLvozql54mdmexOezVpx-YwLGW1LVrJS8GLbk2Iam7S7Sh36HSPyyGynnpdBdj60amgTutvmxf_7X2Ij2RXw79tRgEDR_e-_wL89dcgdBbRFGyY5ldIjE_t-aMRRx2zPPkuHkPPg18RjJ6_FPxmEsHf7BqkCt472HcihBE21BUPoqilHNJoPNgvylFPr4oo_y"
+  },
+  {
+    "id": 5,
+    "name": "Atelier Pour-Over",
+    "category": "Hogar",
+    "badge": "Gourmet",
+    "description": "Vidrio & Acero",
+    "attribute": "Edición Limitada",
+    "price": 110.00,
+    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3m9LXFCoh8MBbTanVJe-VNhNWdBFvse15Yv1XyvWeOu4JEBrizCDtF3-e_ofr3jAyc0QWZ_w43yt6RD1qPYgpIvTTnmB4IKjzpt24xP2Y1QqyORViDA4zwfC_LMxBAEW6HLGP959BjR5mRt8N1gIO-eNxktQnM9h0g7hVQysv9fxBCqrI5Ud5Y1iAlBR2odjiuRf-ih22aekiV7viO2FniW2qS1xxU-XOjMoQjKaCWhJLKMTDQtIF"
+  },
+  {
+    "id": 6,
+    "name": "Pebble 360 Audio",
+    "category": "Audio",
+    "badge": "360° Sound",
+    "description": "Batería 18h",
+    "attribute": "IP67",
+    "price": 68.00,
+    "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDol51_1eYNmOg1o8_GqZdvQlzEbsWg2sqfpmjEMQMaeXGmOg3iSVFPTdwXwApW4hfK-hPSeoM2iDLTRDDYnIVp479A-irj79Ub9QHNYu7apX2NVXr4Jbsh51w4v6EkcdiAbi7J539c70D6RG5C_g1PrKk2Rznd4FYf74BK9xDCp-am9vZiQH8Vo3kMTK1EcaDh9ai21BiQpUIOGWC81rpTBQihAttLje4kZ64pka0OLoqXvXTiCk9J"
+  }
+]
+
