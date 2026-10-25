@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-tertiary-container": "#75859d", "surface": "#f7f9fb", "outline-variant": "#c6c6cd", "on-tertiary-fixed": "#0b1c30", "on-error-container": "#93000a", "surface-dim": "#d8dadc", "on-secondary-fixed-variant": "#005322", "primary-fixed": "#dce2f7", "on-primary-container": "#7d8497", "tertiary": "#000000", "inverse-on-surface": "#eff1f3", "on-surface": "#191c1e", "tertiary-fixed": "#d3e4fe", "tertiary-container": "#0b1c30", "primary-container": "#141b2b", "on-primary": "#ffffff", "inverse-primary": "#c0c6db", "surface-container": "#eceef0", "on-secondary-container": "#007232", "on-surface-variant": "#45464c", "on-primary-fixed": "#141b2b", "secondary-fixed": "#66ff8e", "secondary": "#006d2f", "on-error": "#ffffff", "surface-tint": "#575e70", "error-container": "#ffdad6", "on-tertiary-fixed-variant": "#38485d", "background": "#f7f9fb", "on-tertiary": "#ffffff", "outline": "#76777d", "error": "#ba1a1a", "surface-container-lowest": "#ffffff", "surface-variant": "#e0e3e5", "secondary-container": "#5dfd8a", "primary": "#000000", "on-background": "#191c1e", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#404758", "surface-container-low": "#f2f4f6", "tertiary-fixed-dim": "#b7c8e1", "surface-container-high": "#e6e8ea", "primary-fixed-dim": "#c0c6db", "surface-container-highest": "#e0e3e5", "surface-bright": "#f7f9fb", "inverse-surface": "#2d3133", "on-secondary-fixed": "#002109", "secondary-fixed-dim": "#3de273" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "margin": "1rem", "space-xs": "0.25rem", "space-xl": "2rem", "margin-sm": "0.75rem", "gutter-sm": "0.75rem", "gutter": "1rem", "space-sm": "0.5rem", "margin-lg": "1.5rem", "space-lg": "1.5rem" }, fontFamily: { "label-sm": ["Inter"], "price-lg": ["Inter"], "body-sm": ["Inter"], "title-md": ["Inter"], "display-lg": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "label-md": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-lg": ["Inter"], "price-md": ["Inter"] }, fontSize: { "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "price-lg": ["22px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "22px", "letterSpacing": "0", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0", "fontWeight": "400" }], "headline-lg": ["24px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "price-md": ["16px", { "lineHeight": "20px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Store Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1V6pBPUWt4x9d1BkxeSTVmEbFDH0r_zB9Hsg0LrQkck9RCwuZjfKgb_fvNPpe5w9PH5pLWBV6uk65BCGrCjE1GAdv1qnce07Ov8-KWJP-DUEnJEvel1pzUkwLsnpFNkJjra7Q78dbqrq30S1lxr0hYJ8bqgwnfLLg5v2-JIHIk1YpEENc_ac0ip-xRqMDySIdXb16jIA5u7B6FlApu_waLtBYw7NbutRx7JdqUT8TXWpPhxDQx0gNip0hI"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none uppercase">NOVA STORE</span><span class="font-label-sm text-label-sm text-on-surface-variant">Catálogo</span></div></div><div class="flex items-center gap-space-xs"><a aria-label="Carrito de compras" class="relative w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" data-path="carrito" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="absolute top-1.5 right-1.5 min-w-[18px] h-[18px] px-1 bg-secondary text-on-secondary font-label-sm text-[10px] leading-tight rounded-full flex items-center justify-center font-bold pointer-events-none">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-20">
+<!-- Interactive Category Pills Slider -->
+<div class="w-full overflow-x-auto no-scrollbar py-space-sm px-margin flex items-center gap-space-xs">
+<button class="cat-pill active flex items-center h-8 px-4 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all active:scale-95 shadow-sm">
+      Todos
+    </button>
+<button class="cat-pill flex items-center h-8 px-4 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all active:scale-95">
+      Audio
+    </button>
+<button class="cat-pill flex items-center h-8 px-4 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all active:scale-95">
+      Wearables
+    </button>
+<button class="cat-pill flex items-center h-8 px-4 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all active:scale-95">
+      Accesorios
+    </button>
+<button class="cat-pill flex items-center h-8 px-4 rounded-full bg-surface-container text-on-surface-variant font-label-md text-label-md transition-all active:scale-95">
+      Hogar
+    </button>
+</div>
+<!-- Announcement Micro-banner -->
+<div class="px-margin mt-space-xs mb-space-sm">
+<div class="bg-surface-container-high rounded-xl p-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary text-[20px] flex-shrink-0">bolt</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Envíos express prioritarios en 24h a todo el país</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex-shrink-0 ml-2">GRATIS</span>
+</div>
+</div>
+<!-- Product Catalog Grid (Strict 2-Column Responsive Flow) -->
+<div class="px-margin grid grid-cols-2 gap-gutter-sm">
+<!-- Product Card 1: Audífonos -->
+<div class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-200" data-id="1" data-price="199.00">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="High-end matte black over-ear wireless headphones resting on a minimalist sculptural podium, sleek studio lighting, subtle soft shadows, clean product design photography on off-white background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqpnCrEGKYD1NGQKuEXM23N-4Vf7FQvSY90fBbsHvdYzQ4NL7nfjJopkDRVE1I26vAMU38sIkIwXBS-_MSKkuzg5S12sPcZuNYPi7_zXCJTSLlyRWXORl53z5vSjX28Wtv-xUMuNxCRX95rrb62AqgTA6QADtuFHb84hfEefxMf_i3xFqHYPPMbDDqWITMgt4JfMbWj0a9lqhSMZAM8OpcnJYh4dFW0yh2zMfVcK2T1K72aa_g20Ob"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 backdrop-blur-md font-label-sm text-label-sm text-on-surface-variant">Audio Pro</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1 leading-tight">Nova Sonic Max</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cancelación activa</p>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-price-md text-price-md text-on-surface">$199.00</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Stock listo</span>
+</div>
+<!-- Stepper & Rapid Add -->
+<div class="flex items-center gap-1.5 mt-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container rounded-full h-9 px-1 w-[82px] flex-shrink-0">
+<button class="btn-minus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">−</button>
+<span class="qty-counter font-label-md text-label-md text-on-surface font-semibold select-none">1</span>
+<button class="btn-plus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">+</button>
+</div>
+<button class="btn-add flex-1 h-9 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2: Smartwatch -->
+<div class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-200" data-id="2" data-price="149.50">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Modern aerospace aluminum titanium smartwatch with deep olive fluoroelastomer sports band, glowing OLED screen displaying cardiac metrics, angled top-down studio shot, clean architectural aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiHCbQQKMBVSGzhIStQFZcAzJN0jNc_bMQ8rGa2jFNcfT9XQOrR3sJh7x0WbdXxIIDqrx9RjlUj79b-9bUBcM_rf1pMMHXPYxiffvQTVwYmhEc_9iNTXKY_rkEeJEcbM3lweQou5WHvMTF_Qi4WSQtjDc_OVzeG6tFog8Ty9YpuVrYHYTwk802Dl2aIsXiziUH0q0D6qTJu6BRNWX2FH5FcI3k_g8Y7efPzJwB0CoEcLFmzLdni_PC"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Nuevo</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1 leading-tight">Apex Horizon GPS</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Titanio y Zafiro</p>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-price-md text-price-md text-on-surface">$149.50</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">42mm</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container rounded-full h-9 px-1 w-[82px] flex-shrink-0">
+<button class="btn-minus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">−</button>
+<span class="qty-counter font-label-md text-label-md text-on-surface font-semibold select-none">1</span>
+<button class="btn-plus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">+</button>
+</div>
+<button class="btn-add flex-1 h-9 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3: Mochila Impermeable -->
+<div class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-200" data-id="3" data-price="89.50">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Futuristic technical rolltop commuter backpack made of matte dark slate waterproof fabric, subtle reflective accents, upright studio display with soft ambient daylight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkPhZvz3RZgeVIU0WEGrWbxKAfUfnQLqBThouVc3sTd4PZRspMthkCoGGvJI87Elv3sUakUU8UIx4bdr0NKvnagRmw61EBS432RsFG5rJTaWmM5ZsN3JDd0BR2rx4P2O_Yxf61xyEnAmdw_tTxjNhc-dJCdhgO0Zww7T9xPtJl-Jcn4MhS88vZglelp3fUiNKuCRB8tDlg3L0Fn5wXKZuet-xLW_Ze3gPJVpVWSEJGxzfsM0igsh5x"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 backdrop-blur-md font-label-sm text-label-sm text-on-surface-variant">22 Litros</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1 leading-tight">Mochila Nomad Core</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Impermeable IPX5</p>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-price-md text-price-md text-on-surface">$89.50</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Popular</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container rounded-full h-9 px-1 w-[82px] flex-shrink-0">
+<button class="btn-minus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">−</button>
+<span class="qty-counter font-label-md text-label-md text-on-surface font-semibold select-none">1</span>
+<button class="btn-plus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">+</button>
+</div>
+<button class="btn-add flex-1 h-9 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4: Zapatillas Minimalistas -->
+<div class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-200" data-id="4" data-price="129.00">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Minimalist monochromatic off-white urban leather sneakers floating gracefully on clean backdrop, pristine craftsmanship, geometric sole patterns, crisp neutral lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2IWXQtglv0xu3XnJmodHFYYHxwcVtTP3K1b89r5WKTAEn8tJlyLUQLvozql54mdmexOezVpx-YwLGW1LVrJS8GLbk2Iam7S7Sh36HSPyyGynnpdBdj60amgTutvmxf_7X2Ij2RXw79tRgEDR_e-_wL89dcgdBbRFGyY5ldIjE_t-aMRRx2zPPkuHkPPg18RjJ6_FPxmEsHf7BqkCt472HcihBE21BUPoqilHNJoPNgvylFPr4oo_y"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 backdrop-blur-md font-label-sm text-label-sm text-on-surface-variant">Calzado</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1 leading-tight">Aero Pure Leather</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cuero ecológico</p>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-price-md text-price-md text-on-surface">$129.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tallas 38-44</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container rounded-full h-9 px-1 w-[82px] flex-shrink-0">
+<button class="btn-minus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">−</button>
+<span class="qty-counter font-label-md text-label-md text-on-surface font-semibold select-none">1</span>
+<button class="btn-plus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">+</button>
+</div>
+<button class="btn-add flex-1 h-9 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 5: Cafetera de Diseño -->
+<div class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-200" data-id="5" data-price="110.00">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Architectural brushed stainless steel pour-over designer coffee maker with a minimal silhouette, elegant clear borosilicate glass carafe, warm cozy Scandinavian interior light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3m9LXFCoh8MBbTanVJe-VNhNWdBFvse15Yv1XyvWeOu4JEBrizCDtF3-e_ofr3jAyc0QWZ_w43yt6RD1qPYgpIvTTnmB4IKjzpt24xP2Y1QqyORViDA4zwfC_LMxBAEW6HLGP959BjR5mRt8N1gIO-eNxktQnM9h0g7hVQysv9fxBCqrI5Ud5Y1iAlBR2odjiuRf-ih22aekiV7viO2FniW2qS1xxU-XOjMoQjKaCWhJLKMTDQtIF"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 backdrop-blur-md font-label-sm text-label-sm text-on-surface-variant">Gourmet</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1 leading-tight">Atelier Pour-Over</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Vidrio &amp; Acero</p>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-price-md text-price-md text-on-surface">$110.00</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Edición Limitada</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container rounded-full h-9 px-1 w-[82px] flex-shrink-0">
+<button class="btn-minus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">−</button>
+<span class="qty-counter font-label-md text-label-md text-on-surface font-semibold select-none">1</span>
+<button class="btn-plus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">+</button>
+</div>
+<button class="btn-add flex-1 h-9 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 6: Altavoz Portátil -->
+<div class="product-card flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all duration-200" data-id="6" data-price="68.00">
+<div class="relative w-full aspect-square bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-300 hover:scale-105" data-alt="Cylindrical compact wireless Bluetooth speaker coated with textured tactile woven textile in warm charcoal grey, leather carry strap, modern tabletop arrangement." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDol51_1eYNmOg1o8_GqZdvQlzEbsWg2sqfpmjEMQMaeXGmOg3iSVFPTdwXwApW4hfK-hPSeoM2iDLTRDDYnIVp479A-irj79Ub9QHNYu7apX2NVXr4Jbsh51w4v6EkcdiAbi7J539c70D6RG5C_g1PrKk2Rznd4FYf74BK9xDCp-am9vZiQH8Vo3kMTK1EcaDh9ai21BiQpUIOGWC81rpTBQihAttLje4kZ64pka0OLoqXvXTiCk9J"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface-container-highest/90 backdrop-blur-md font-label-sm text-label-sm text-on-surface-variant">360° Sound</span>
+</div>
+<div class="p-space-sm flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<h3 class="font-title-md text-title-md text-on-surface line-clamp-1 leading-tight">Pebble 360 Audio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Batería 18h</p>
+</div>
+<div class="flex items-baseline justify-between mt-space-xs">
+<span class="font-price-md text-price-md text-on-surface">$68.00</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">IP67</span>
+</div>
+<div class="flex items-center gap-1.5 mt-space-xs pt-space-xs">
+<div class="flex items-center justify-between bg-surface-container rounded-full h-9 px-1 w-[82px] flex-shrink-0">
+<button class="btn-minus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">−</button>
+<span class="qty-counter font-label-md text-label-md text-on-surface font-semibold select-none">1</span>
+<button class="btn-plus w-7 h-7 rounded-full flex items-center justify-center text-on-surface active:bg-surface active:scale-90 transition-all text-[16px] font-bold select-none" type="button">+</button>
+</div>
+<button class="btn-add flex-1 h-9 rounded-full bg-primary text-on-primary font-label-sm text-label-sm flex items-center justify-center gap-1 active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Añadir</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Sticky Order Summary Bar (Above bottom tab navigation) -->
+<div class="fixed bottom-16 inset-x-0 z-40 px-margin pb-2 pointer-events-none">
+<div class="pointer-events-auto mx-auto max-w-md w-full bg-surface-container-lowest/95 backdrop-blur-xl rounded-xl p-space-sm shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex items-center justify-between gap-space-sm cursor-pointer transition-all active:scale-[0.99]" id="quick-order-bar">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-sm relative">
+<span class="material-symbols-outlined text-[20px]">shopping_bag</span>
+<span class="absolute -top-1 -right-1 w-3.5 h-3.5 rounded-full bg-secondary" id="floating-badge-pulse"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate" id="summary-items">3 productos</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">•</span>
+<span class="font-price-md text-price-md text-on-surface" id="summary-total">$347.50</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Toca para finalizar compra</span>
+</div>
+</div>
+<button class="flex-shrink-0 h-10 px-4 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-sm active:opacity-90" id="open-drawer-btn">
+<span>Ver Carro</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Tactile Cart Detail Modal Drawer -->
+<div class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300" id="cart-drawer-backdrop">
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest rounded-t-2xl p-space-lg shadow-2xl transform translate-y-full transition-transform duration-300 max-h-[85vh] flex flex-col" id="cart-drawer-sheet">
+<!-- Drawer Handle & Header -->
+<div class="w-12 h-1 bg-surface-container-high rounded-full mx-auto mb-space-md"></div>
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-high">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tu Orden Actual</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Resumen previo a checkout de WhatsApp</p>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant active:scale-95 transition-transform" id="close-drawer-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content -->
+<div class="flex-1 overflow-y-auto py-space-md space-y-space-sm">
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[24px]">headphones</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Nova Sonic Max</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1 unidad</p>
+</div>
+</div>
+<span class="font-price-md text-price-md text-on-surface">$199.00</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[24px]">watch</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Apex Horizon GPS</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1 unidad</p>
+</div>
+</div>
+<span class="font-price-md text-price-md text-on-surface">$149.50</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg bg-surface-container-low flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface text-[24px]">backpack</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Mochila Nomad Core</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1 unidad</p>
+</div>
+</div>
+<span class="font-price-md text-price-md text-on-surface">$89.50</span>
+</div>
+</div>
+<!-- Drawer Footer & Final Checkout Action -->
+<div class="pt-space-md border-t border-surface-container-high space-y-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-body-lg text-body-lg text-on-surface-variant">Total estimado</span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold" id="drawer-total-val">$347.50</span>
+</div>
+<button class="w-full h-12 rounded-xl bg-secondary text-on-secondary font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md active:scale-[0.98] transition-transform" id="whatsapp-checkout-btn">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Confirmar Pedido vía WhatsApp</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    let cartTotal = 347.50;
+    let totalItems = 3;
+
+    // Elements
+    const headerCartBadge = document.querySelector('header a[data-path="carrito"] span.absolute');
+    const summaryItems = document.getElementById('summary-items');
+    const summaryTotal = document.getElementById('summary-total');
+    const drawerTotalVal = document.getElementById('drawer-total-val');
+    const pulseDot = document.getElementById('floating-badge-pulse');
+
+    // Steppers inside product cards
+    document.querySelectorAll('.product-card').forEach((card) => {
+      const minusBtn = card.querySelector('.btn-minus');
+      const plusBtn = card.querySelector('.btn-plus');
+      const counter = card.querySelector('.qty-counter');
+      const addBtn = card.querySelector('.btn-add');
+      const price = parseFloat(card.dataset.price || '0');
+
+      let currentQty = 1;
+
+      minusBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (currentQty > 1) {
+          currentQty--;
+          counter.textContent = currentQty;
+        }
+      });
+
+      plusBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (currentQty < 99) {
+          currentQty++;
+          counter.textContent = currentQty;
+        }
+      });
+
+      addBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        // Update values
+        totalItems += currentQty;
+        cartTotal += (price * currentQty);
+
+        // Reflect in top header badge
+        if (headerCartBadge) {
+          headerCartBadge.textContent = totalItems;
+          headerCartBadge.classList.add('scale-125');
+          setTimeout(() => headerCartBadge.classList.remove('scale-125'), 200);
+        }
+
+        // Reflect in summary bar
+        summaryItems.textContent = `${totalItems} productos`;
+        summaryTotal.textContent = `$${cartTotal.toFixed(2)}`;
+        if (drawerTotalVal) drawerTotalVal.textContent = `$${cartTotal.toFixed(2)}`;
+
+        // Micro-interaction on add button
+        const originalHTML = addBtn.innerHTML;
+        addBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Listo';
+        addBtn.classList.remove('bg-primary');
+        addBtn.classList.add('bg-secondary', 'text-on-secondary');
+        
+        // Tactile bounce on pulse badge
+        if (pulseDot) {
+          pulseDot.classList.add('animate-ping');
+          setTimeout(() => pulseDot.classList.remove('animate-ping'), 600);
+        }
+
+        setTimeout(() => {
+          addBtn.innerHTML = originalHTML;
+          addBtn.classList.remove('bg-secondary', 'text-on-secondary');
+          addBtn.classList.add('bg-primary');
+          currentQty = 1;
+          counter.textContent = currentQty;
+        }, 1100);
+      });
+    });
+
+    // Drawer Interaction
+    const quickOrderBar = document.getElementById('quick-order-bar');
+    const openDrawerBtn = document.getElementById('open-drawer-btn');
+    const closeDrawerBtn = document.getElementById('close-drawer-btn');
+    const cartDrawerBackdrop = document.getElementById('cart-drawer-backdrop');
+    const cartDrawerSheet = document.getElementById('cart-drawer-sheet');
+
+    function openDrawer() {
+      cartDrawerBackdrop.classList.remove('pointer-events-none', 'opacity-0');
+      cartDrawerBackdrop.classList.add('opacity-100');
+      cartDrawerSheet.classList.remove('translate-y-full');
+      cartDrawerSheet.classList.add('translate-y-0');
+    }
+
+    function closeDrawer() {
+      cartDrawerBackdrop.classList.add('opacity-0');
+      cartDrawerBackdrop.classList.remove('opacity-100');
+      cartDrawerSheet.classList.remove('translate-y-0');
+      cartDrawerSheet.classList.add('translate-y-full');
+      setTimeout(() => {
+        cartDrawerBackdrop.classList.add('pointer-events-none');
+      }, 300);
+    }
+
+    quickOrderBar.addEventListener('click', openDrawer);
+    openDrawerBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      openDrawer();
+    });
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    cartDrawerBackdrop.addEventListener('click', (e) => {
+      if (e.target === cartDrawerBackdrop) closeDrawer();
+    });
+
+    // Category pills filter toggle
+    document.querySelectorAll('.cat-pill').forEach((pill) => {
+      pill.addEventListener('click', function () {
+        document.querySelectorAll('.cat-pill').forEach((p) => {
+          p.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+          p.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        this.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        this.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+      });
+    });
+
+    // WhatsApp Checkout trigger
+    const whatsappBtn = document.getElementById('whatsapp-checkout-btn');
+    if (whatsappBtn) {
+      whatsappBtn.addEventListener('click', () => {
+        const text = encodeURIComponent(`¡Hola NOVA STORE! Quisiera confirmar mi pedido por un total de $${cartTotal.toFixed(2)}.`);
+        window.open(`https://wa.me/?text=${text}`, '_blank');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-margin"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="catalogo" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm mt-0.5">Catálogo</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="carrito" href="#"><span class="material-symbols-outlined text-[22px]">shopping_cart</span><span class="font-label-sm text-label-sm mt-0.5">Carrito</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="pedidos" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-sm text-label-sm mt-0.5">Pedidos</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="perfil" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm mt-0.5">Perfil</span></a></div></nav></body></html>
