@@ -3,8 +3,9 @@
  * Cumple con el Principio 5 de la Constitución: Código Limpio y Sin Secretos.
  */
 
-// Número oficial de WhatsApp para recepción de pedidos (formato internacional sin '+' ni espacios)
-export const WHATSAPP_PHONE_NUMBER = "51999999999";
+// Número oficial de WhatsApp para recepción de pedidos (formato internacional Perú: +51 983064501)
+export const WHATSAPP_PHONE_NUMBER = "51983064501";
+export const WHATSAPP_NUMBER = "51983064501";
 
 // Nombre comercial de la tienda
 export const STORE_NAME = "NOVA STORE";
@@ -17,4 +18,3 @@ export const CART_STORAGE_KEY = "novastore_cart_v1";
 
 // Categorías del catálogo
 export const CATEGORIES = ["Todos", "Audio", "Wearables", "Accesorios", "Hogar"];
-
